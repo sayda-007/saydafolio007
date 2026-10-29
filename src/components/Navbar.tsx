@@ -1,6 +1,5 @@
 import { Menu, X } from 'lucide-react'
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useState, type MouseEvent } from 'react'
 import { navItems } from '../data/portfolioData'
 
 function Navbar() {
@@ -8,12 +7,23 @@ function Navbar() {
 
   const closeMenu = () => setMenuOpen(false)
 
+  const handleBrandClick = (event: MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault()
+
+    if (window.location.pathname === '/') {
+      window.location.assign('/')
+      return
+    }
+
+    window.location.assign('/#top')
+  }
+
   return (
     <header className="site-header">
       <div className="container nav-shell">
-        <Link to="/" className="brand" aria-label="Go to home page">
+        <a href="/#top" className="brand" aria-label="Go to home page" onClick={handleBrandClick}>
           <span className="brand-mark">sayda007</span>
-        </Link>
+        </a>
 
         <nav className="main-nav" aria-label="Main navigation">
           <div className={`nav-links ${menuOpen ? 'nav-links--open' : ''}`}>

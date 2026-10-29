@@ -1,4 +1,3 @@
-import { Mail, Phone } from 'lucide-react'
 import { FaLinkedinIn } from 'react-icons/fa6'
 import { SiFacebook, SiGithub, SiInstagram, SiX } from 'react-icons/si'
 import { Link } from 'react-router-dom'
@@ -35,13 +34,6 @@ function Footer() {
               </a>
             )
           })}
-
-          <a href="mailto:saydaa.akter01@gmail.com" aria-label="Email contact link">
-            <Mail size={18} />
-          </a>
-          <a href="tel:+8801610679330" aria-label="Phone contact link">
-            <Phone size={18} />
-          </a>
         </div>
       </div>
 

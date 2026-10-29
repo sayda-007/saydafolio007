@@ -6,12 +6,21 @@ type ProjectCardProps = {
   project: Project
 }
 
+const projectImageMap: Record<string, string> = {
+  bazardor: '/assets/BazarDor.JPG',
+  fitlog: '/assets/FitLogPage.JPG',
+  devstack: '/assets/DevStack.JPG',
+  'cultural-day': '/assets/CulturalInvitation.JPG',
+  devconf: '/assets/DevConf.JPG',
+}
+
 function ProjectCard({ project }: ProjectCardProps) {
+  const projectImage = projectImageMap[project.slug]
+
   return (
-    <article className="project-card">
-      <div className={`project-visual project-visual--${project.slug}`} aria-hidden="true">
-        <div className="project-visual__orb" />
-        <div className="project-visual__ring" />
+    <article className="project-card reveal-animate">
+      <div className={`project-visual project-visual--${project.slug}`}>
+        <img className="project-visual__image" src={projectImage} alt={`${project.title} screenshot`} />
       </div>
 
       <div className="project-card__body">

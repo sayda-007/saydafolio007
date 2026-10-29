@@ -1,20 +1,17 @@
 .page-shell {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  display: block;
   min-height: 100vh;
   color: #e5edf8;
   background: linear-gradient(180deg, rgba(5, 11, 19, 0.96), rgba(9, 17, 28, 0.96));
 }
 
-.page-shell--simple {
-  padding-bottom: 0;
+.page-shell > main {
+  padding-top: 74px;
 }
 
-main {
-  position: relative;
-  z-index: 1;
-  flex: 1 0 auto;
+.page-shell--simple {
+  padding-bottom: 0;
 }
 
 .container {
@@ -195,11 +192,11 @@ main {
 }
 
 .site-header {
-  position: sticky !important;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 30;
+  z-index: 1000;
   backdrop-filter: blur(14px);
   background: rgba(6, 13, 25, 0.72);
   border-bottom: 1px solid rgba(125, 139, 255, 0.18);
@@ -221,7 +218,8 @@ main {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: lowercase;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  text-shadow: 0 0 10px rgba(138, 227, 255, 0.25);
+  transition: opacity 0.2s ease, transform 0.2s ease, text-shadow 0.2s ease;
 }
 
 .brand:hover,
@@ -235,8 +233,13 @@ main {
 .brand-mark {
   display: inline-block;
   font-size: 1.1rem;
-  color: #ecf8ff;
+  color: transparent;
+  background: linear-gradient(90deg, #b8f3ff 0%, #78cfff 45%, #8175ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-decoration: none;
+  text-shadow: inherit;
 }
 
 .main-nav {
@@ -361,6 +364,18 @@ main {
   border-right: 2px solid rgba(154, 217, 255, 0.9);
   width: 12ch;
   animation: typing 2.7s steps(12, end) 0.35s 1 both, blink 0.8s step-end infinite 2.7s;
+}
+
+.reveal-animate {
+  opacity: 0;
+  transform: translateY(22px);
+  will-change: opacity, transform;
+}
+
+.reveal-animate.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: revealUp 0.7s ease-out both;
 }
 
 .hero-text {
@@ -686,7 +701,7 @@ main {
 .project-visual {
   position: relative;
   height: 220px;
-  padding: 1rem;
+  padding: 0;
   border-bottom: 1px solid rgba(147, 167, 255, 0.15);
   background: linear-gradient(135deg, rgba(30, 39, 71, 0.92), rgba(18, 26, 43, 0.9));
   overflow: hidden;
@@ -696,35 +711,14 @@ main {
   min-height: 260px;
 }
 
-.project-visual__orb,
-.project-visual__ring {
-  position: absolute;
-  border-radius: 50%;
+.project-visual__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  background: rgba(12, 20, 34, 0.8);
 }
-
-.project-visual__orb {
-  width: 120px;
-  height: 120px;
-  right: 18%;
-  top: 24%;
-  background: radial-gradient(circle at 30% 30%, rgba(167, 217, 255, 0.8), rgba(112, 124, 214, 0.6) 28%, rgba(17, 24, 35, 0.8) 100%);
-  box-shadow: 0 0 34px rgba(102, 130, 255, 0.3);
-}
-
-.project-visual__ring {
-  width: 190px;
-  height: 190px;
-  left: 18%;
-  top: 18%;
-  border: 1px solid rgba(148, 200, 255, 0.24);
-  transform: rotate(14deg);
-}
-
-.project-visual--devstack .project-visual__orb { background: radial-gradient(circle at 32% 32%, rgba(177, 227, 255, 0.9), rgba(112, 132, 214, 0.7) 28%, rgba(17, 24, 35, 0.8) 100%); }
-.project-visual--fitlog .project-visual__orb { background: radial-gradient(circle at 35% 35%, rgba(189, 230, 255, 0.9), rgba(128, 105, 255, 0.7) 28%, rgba(19, 18, 33, 0.8) 100%); }
-.project-visual--cultural-day .project-visual__orb { background: radial-gradient(circle at 30% 30%, rgba(239, 190, 255, 0.85), rgba(132, 116, 220, 0.7) 28%, rgba(18, 18, 31, 0.8) 100%); }
-.project-visual--devconf .project-visual__orb { background: radial-gradient(circle at 33% 33%, rgba(170, 214, 255, 0.9), rgba(94, 135, 255, 0.75) 30%, rgba(15, 20, 33, 0.8) 100%); }
-.project-visual--bazardor .project-visual__orb { background: radial-gradient(circle at 34% 34%, rgba(173, 240, 255, 0.9), rgba(116, 162, 255, 0.78) 30%, rgba(14, 22, 34, 0.8) 100%); }
 
 .contact-section {
   padding-bottom: 5rem;
@@ -1056,5 +1050,9 @@ main {
     border-right: none;
     width: auto;
     max-width: none;
+  }
+
+  .reveal-animate {
+    animation: none !important;
   }
 }

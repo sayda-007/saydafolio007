@@ -76,33 +76,6 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: 'devstack',
-    title: 'DevStack',
-    shortDescription: 'A React + TypeScript interface built as a practical front-end project.',
-    description:
-      'DevStack is a web project created with React, TypeScript, and CSS. It reflects a clean, developer-focused interface and demonstrates front-end learning through project-based implementation.',
-    technologies: ['React', 'TypeScript', 'CSS'],
-    liveUrl: 'https://devstack-a05-007.netlify.app/',
-    repoUrl: 'https://github.com/sayda-007/DevStack_A05',
-    summary: [
-      'Built as a front-end project in React and TypeScript.',
-      'Uses a clean, structured layout with reusable styling patterns.',
-      'Published publicly with a live demo and source code repository.',
-    ],
-    verifiedDetails: [
-      'Project technologies are verified as React, TypeScript, and CSS.',
-      'The live demo is hosted on Netlify and the repository is available on GitHub.',
-      'This project is part of the portfolio work created during web-development learning.',
-    ],
-    knownLimitations: [
-      'No verified limitation details were provided for this project beyond the general project information available in the portfolio brief.',
-    ],
-    futureImprovements: [
-      'Suggestion: improve the project structure for easier maintenance and scaling.',
-      'Suggestion: expand the UI with more interactive components and clearer content hierarchy.',
-    ],
-  },
-  {
     slug: 'fitlog',
     title: 'FitLog',
     shortDescription: 'A JavaScript-based project focused on a practical app interface and user flow.',
@@ -127,6 +100,33 @@ export const projects: Project[] = [
     futureImprovements: [
       'Suggestion: add a stronger information architecture for clearer user flows.',
       'Suggestion: improve accessibility and responsiveness with more careful mobile testing.',
+    ],
+  },
+  {
+    slug: 'devstack',
+    title: 'DevStack',
+    shortDescription: 'A React + TypeScript interface built as a practical front-end project.',
+    description:
+      'DevStack is a web project created with React, TypeScript, and CSS. It reflects a clean, developer-focused interface and demonstrates front-end learning through project-based implementation.',
+    technologies: ['React', 'TypeScript', 'CSS'],
+    liveUrl: 'https://devstack-a05-007.netlify.app/',
+    repoUrl: 'https://github.com/sayda-007/DevStack_A05',
+    summary: [
+      'Built as a front-end project in React and TypeScript.',
+      'Uses a clean, structured layout with reusable styling patterns.',
+      'Published publicly with a live demo and source code repository.',
+    ],
+    verifiedDetails: [
+      'Project technologies are verified as React, TypeScript, and CSS.',
+      'The live demo is hosted on Netlify and the repository is available on GitHub.',
+      'This project is part of the portfolio work created during web-development learning.',
+    ],
+    knownLimitations: [
+      'No verified limitation details were provided for this project beyond the general project information available in the portfolio brief.',
+    ],
+    futureImprovements: [
+      'Suggestion: improve the project structure for easier maintenance and scaling.',
+      'Suggestion: expand the UI with more interactive components and clearer content hierarchy.',
     ],
   },
   {
