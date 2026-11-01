@@ -7,11 +7,11 @@ import {
   GraduationCap,
   Mail,
   MapPin,
-  Phone,
   Sparkles,
   Star,
 } from 'lucide-react'
 import { useEffect, useState } from 'react'
+import { FaWhatsapp } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa6'
 import { SiFacebook, SiGithub, SiInstagram, SiX } from 'react-icons/si'
 import Footer from '../components/Footer'
@@ -61,6 +61,8 @@ function TypewriterName() {
 }
 
 function HomePage() {
+  const whatsappLink = `https://wa.me/${personalInfo.phone.replace(/\D/g, '')}`
+
   useEffect(() => {
     const revealNodes = Array.from(document.querySelectorAll('.reveal-animate'))
 
@@ -338,10 +340,11 @@ function HomePage() {
                     <Mail size={18} />
                     {personalInfo.email}
                   </a>
-                  <a href={`tel:${personalInfo.phone.replace(/\s+/g, '')}`}>
-                    <Phone size={18} />
+                  <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                    <FaWhatsapp size={18} />
                     {personalInfo.phone}
                   </a>
+                  <p>WhatsApp messages only — voice calls are not accepted at this number.</p>
                 </div>
               </div>
 

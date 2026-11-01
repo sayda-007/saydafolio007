@@ -18,7 +18,7 @@ export const personalInfo = {
   cvUrl: '/assets/Sayda_Akter_CV.pdf',
   profileImage: '/assets/Sayda.png',
   email: 'saydaa.akter01@gmail.com',
-  phone: '+8801610679330',
+  phone: '+8801400683610',
 }
 
 export const socialLinks = [
