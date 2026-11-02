@@ -1,75 +1,86 @@
-# React + TypeScript + Vite
+# 🌌 SaydaFolio007 — Personal Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio! I'm **Sayda**, an aspiring Full-Stack Developer who enjoys learning, building, experimenting, and turning ideas into web experiences.
 
-Currently, two official plugins are available:
+This portfolio is a reflection of my development journey, the projects I've built, the skills I'm learning, and the progress I'm making as a developer.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ About This Portfolio
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**saydafolio007** is my personal developer portfolio, designed with a modern, dark space-inspired aesthetic.
 
-## Expanding the ESLint configuration
+It brings together my projects, technical skills, background, and contact information in one place.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Featured Projects
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Here are some of the projects featured in my portfolio:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1. BazarDor
 
-```
+A project featured in my portfolio showcasing my practical development work.
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+🔗 [Live Demo](https://bazar-dor-a7-chi.vercel.app/)
+🔗 [GitHub Repository](https://github.com/sayda-007/Bazar-Dor_A7)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 2. FitLog
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+🔗 [Live Demo](https://fit-log-a06-gilt.vercel.app/)
+🔗 [GitHub Repository](https://github.com/sayda-007/FitLog_A06)
 
-```
+### 3. DevStack
+
+🔗 [Live Demo](https://devstack-a05-007.netlify.app/)
+🔗 [GitHub Repository](https://github.com/sayda-007/DevStack_A05)
+
+### 4. Cultural Day Invitation 2026
+
+A responsive digital invitation created with HTML and CSS.
+
+🔗 [Live Demo](https://sayda-007.github.io/CSE-25_Cultural-Day-Invitation_2026/)
+🔗 [GitHub Repository](https://github.com/sayda-007/CSE-25_Cultural-Day-Invitation_2026)
+
+### 5. DEVCONF 2026
+
+A modern developer conference website built with HTML and CSS.
+
+🔗 [Live Demo](https://sayda-007.github.io/B14-A01-DevConf-2026-main/)
+🔗 [GitHub Repository](https://github.com/sayda-007/B14-A01-DevConf-2026-main)
+
+---
+
+## 🎯 My Learning Journey
+
+I'm continuously improving my development skills through consistent learning, practice, and real-world projects.
+
+My current focus includes:
+
+- Strengthening JavaScript fundamentals
+- Improving React and TypeScript skills
+- Learning backend development with Node.js
+- Understanding full-stack application development
+- Building clean, responsive, and user-friendly interfaces
+- Practicing problem-solving and writing maintainable code
+
+My goal is to grow into a professional Full-Stack Developer.
+
+---
+
+## 📬 Connect With Me
+
+- **LinkedIn:** [saydaa007](https://www.linkedin.com/in/saydaa007)
+- **GitHub:** [sayda-007](https://github.com/sayda-007)
+  
+---
+
+## 💫 A Little Reminder
+
+> Learn → Practice → Build → Make mistakes → Fix them → Grow.
+
+Thanks for visiting my portfolio! Every project represents another step forward in my journey as a developer.
+
+**Made with curiosity, creativity, and lots of learning. . 🌙🦋**
+
+— **sayda007**
