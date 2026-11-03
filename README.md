@@ -1,7 +1,6 @@
 # 🌌 saydafolio007 — Personal Developer Portfolio
 
-Welcome to my personal portfolio!
-I'm **Sayda**, an aspiring Full-Stack Developer who enjoys learning, building, experimenting, and turning ideas into web experiences.
+Welcome to my personal portfolio! <br> I'm **Sayda**, an aspiring Full-Stack Developer who enjoys learning, building, experimenting, and turning ideas into web experiences.
 
 This portfolio is a reflection of my development journey, the projects I've built, the skills I'm learning, and the progress I'm making as a developer.
 
